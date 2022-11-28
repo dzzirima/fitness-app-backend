@@ -27,11 +27,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv = __importStar(require("dotenv")); // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
-dotenv.config();
+dotenv.config({ path: "../.env" });
 const app_1 = __importDefault(require("./app"));
 const swaggerDocs_1 = __importDefault(require("./helpers/swaggerDocs"));
 //@ts-ignore
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8000;
 app_1.default.listen(PORT, () => {
     console.log(`Server running on port : ${PORT}`);
     (0, swaggerDocs_1.default)(app_1.default, PORT);

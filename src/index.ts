@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
-dotenv.config();
+dotenv.config({path:"../.env"});
 import app from "./app";
 import swaggerDocs from "./helpers/swaggerDocs";
 
