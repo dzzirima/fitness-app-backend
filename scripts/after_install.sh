@@ -7,5 +7,5 @@ cd /home/ec2-user/apis/autodep >> /home/ec2-user/apis/autodep/deploy.log
 echo 'npm install' >> /home/ec2-user/apis/autodep/deploy.log 
 npm install >> /home/ec2-user/apis/autodep/deploy.log
 
-echo 'building app now ....!' >> /home/ec2-user/apis/autodep/deploy.log 
-npm build >> /home/ec2-user/apis/autodep/deploy.log
+# echo 'building app now ....!' >> /home/ec2-user/apis/autodep/deploy.log 
+# npm build >> /home/ec2-user/apis/autodep/deploy.log
