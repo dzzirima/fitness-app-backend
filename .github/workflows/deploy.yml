@@ -23,7 +23,7 @@ jobs:
         id: deploy
         run: |
           aws deploy create-deployment \
-          --application-name fitness_app_node_js_auto_cicd \
-          --deployment-group-name fitness_app_node_js_auto_cicd_cd1 \
+          --application-name fitness_app_node_js_auto_cicd\
+          --deployment-group-name fitness_app_node_js_auto_cicd_cd1\
           --deployment-config-name CodeDeployDefault.OneAtATime \
           --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
