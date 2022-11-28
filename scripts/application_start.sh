@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Stop all servers and start the server as a daemon
-# forever stopall
-# forever start /home/ubuntu/nodejs/app.js
+echo 'run application_start.sh: ' >> /home/ec2-user/apis/autodep/deploy.log
 
-
-node /home/ec2-user/dist/src/server.js
+echo 'pm2 restart' >> /home/ec2-user/apis/autodep/deploy.log
+pm2 restart nodejs-express-app >> /home/ec2-user/apis/autodep/deploy.log

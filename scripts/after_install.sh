@@ -1,7 +1,8 @@
 #!/bin/bash
+echo 'run after_install.sh: ' >> /home/ec2-user/apis/autodep/deploy.log
 
-mkdir /home/ubuntu/nodejs
-cd /home/ubuntu/nodejs
-cd /home/ec2-user
+echo 'cd /home/ec2-user/apis/autodep' >> /home/ec2-user/apis/autodep/deploy.log
+cd /home/ec2-user/apis/autodep >> /home/ec2-user/apis/autodep/deploy.log
 
-sudo npm install
+echo 'npm install' >> /home/ec2-user/apis/autodep/deploy.log 
+npm install >> /home/ec2-user/apis/autodep/deploy.log
