@@ -8,6 +8,7 @@
     "build": "rimraf ./dist && tsc",
     "production": "ts-node  src/index.ts",
     "dev": "nodemon --exec ts-node src/index.ts",
+    "dev1": "node dist/src/index.js",
     "test": "jest"
   },
   "author": "Ras D , Dr Ras Makuti",
