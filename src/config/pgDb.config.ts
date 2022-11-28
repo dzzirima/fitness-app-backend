@@ -18,6 +18,7 @@ const postgresDdClient = new Sequelize(
   {
     host: process.env.POSTGRESQL_DB_HOST,
     dialect: "postgres",
+    logging:false
     // declaring pool is optional
     // pool: {
     //   max: dbConfig.pool.max,
