@@ -4,7 +4,7 @@
   "description": "This is the backend of fitness app",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node  src/index.ts",
+    "start": "pm2 start ts-node  src/index.ts",
     "build": "rm -r dist && tsc",
     "build-dev": "cp .env  ./dist/.env",
     "production": "ts-node  src/index.ts",
