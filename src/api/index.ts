@@ -20,7 +20,7 @@ router.use("/workout", workoutsRoutes);
 
 router.get("/", (req, res) => {
   return res.json({
-    message: "fitness-backend app is up and running ",
+    message: "fitness-backend app is up and running ...lets go ",
   });
 });
 
