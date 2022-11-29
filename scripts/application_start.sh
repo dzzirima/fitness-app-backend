@@ -9,4 +9,5 @@ echo 'restarting fitness backend app ....!!' >> /home/ec2-user/apis/autodep/depl
 # pm2 start dist/src/index.js --name=fitness-backend >> /home/ec2-user/apis/autodep/deploy.log
 # npm run dev
 
-
+echo 'running server as  a background job ....!!' >> /home/ec2-user/apis/autodep/deploy.log
+nohup node  dist/src/index.js &
