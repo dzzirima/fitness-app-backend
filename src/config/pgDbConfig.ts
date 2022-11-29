@@ -15,11 +15,11 @@ import { Sequelize } from "sequelize";
 // );
 
 const postgresDdClient = new Sequelize(
-  process.env.POSTGRESQL_DB!,
-  process.env.POSTGRESQL_DB_USER!,
-  process.env.POSTGRESQL_DB_PASSWORD,
+  "postgres",
+  "postgres",
+  "chicken123",
   {
-    host: process.env.POSTGRESQL_DB_HOST,
+    host: "fittness.cj2glqaazokx.us-east-1.rds.amazonaws.com",
     dialect: "postgres",
     logging: false,
     // declaring pool is optional
