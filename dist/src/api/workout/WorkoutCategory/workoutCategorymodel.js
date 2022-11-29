@@ -4,9 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_1 = require("sequelize");
-const pgDb_config_1 = __importDefault(require("../../../config/pgDb.config"));
+const pgDbConfig_1 = __importDefault(require("../../../config/pgDbConfig"));
 // import WorkoutType from "../WorkoutType/workoutType.model";
-const WorkoutCategory = pgDb_config_1.default.define("workout_category", {
+const WorkoutCategory = pgDbConfig_1.default.define("workout_category", {
     Id: {
         type: sequelize_1.DataTypes.STRING,
         primaryKey: true,

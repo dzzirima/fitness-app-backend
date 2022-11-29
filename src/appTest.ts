@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import apiV1 from "./api/index";
-import postgresDdClient from "./config/pgDb.config";
+import postgresDdClient from "./config/pgDbConfig";
 
 class App {
   public express: express.Application;

@@ -1,5 +1,5 @@
 import { DataTypes, Sequelize } from "sequelize";
-import postgresDdClient from "../../../config/pgDb.config";
+import postgresDdClient from "../../../config/pgDbConfig";
 // import WorkoutType from "../WorkoutType/workoutType.model";
 
 const WorkoutCategory = postgresDdClient.define("workout_category", {

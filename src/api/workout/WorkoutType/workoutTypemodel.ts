@@ -1,5 +1,5 @@
 import { DataTypes, Sequelize } from "sequelize";
-import postgresDdClient from "../../../config/pgDb.config";
+import postgresDdClient from "../../../config/pgDbConfig";
 
 // import WorkoutCategory from "../workoutCategory/workoutCategory.model";
 // import Exercise from "../Excercise/exercise.model";

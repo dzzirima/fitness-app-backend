@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import apiV1 from "../src/api/index";
-import postgresDdClient from "./config/pgDb.config";
+import postgresDdClient from "./config/pgDbConfig";
 import { defineRelationships } from "./config/index";
 
 class App {

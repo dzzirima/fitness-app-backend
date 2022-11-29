@@ -16,7 +16,7 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const morgan_1 = __importDefault(require("morgan"));
 const index_1 = __importDefault(require("../src/api/index"));
-const pgDb_config_1 = __importDefault(require("./config/pgDb.config"));
+const pgDbConfig_1 = __importDefault(require("./config/pgDbConfig"));
 const index_2 = require("./config/index");
 class App {
     constructor() {
@@ -37,8 +37,8 @@ class App {
     connectToDB() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                yield pgDb_config_1.default.authenticate();
-                yield pgDb_config_1.default.sync({ alter: true });
+                yield pgDbConfig_1.default.authenticate();
+                yield pgDbConfig_1.default.sync({ alter: true });
                 console.log("database connected successfully !!!");
                 yield (0, index_2.defineRelationships)();
             }
