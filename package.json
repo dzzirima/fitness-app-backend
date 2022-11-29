@@ -8,6 +8,7 @@
     "build": "rm -r dist && tsc",
     "build-dev": "cp .env  ./dist/.env",
     "production": "ts-node  src/index.ts",
+    "prod": "forever start -v -c ts-node  src/index.ts",
     "dev": "nodemon --exec ts-node src/index.ts",
     "dev1": "pm2  start src/index.ts --watch",
     "test": "jest"

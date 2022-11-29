@@ -8,3 +8,5 @@ echo 'restarting fitness backend app ....!!' >> /home/ec2-user/apis/autodep/depl
 # # pm2 restart 0 >>/home/ec2-user/apis/autodep/deploy.log
 # pm2 start dist/src/index.js --name=fitness-backend >> /home/ec2-user/apis/autodep/deploy.log
 # npm run dev
+
+
