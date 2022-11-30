@@ -8,4 +8,15 @@ echo 'restarting fitness backend app ....!!' >> /home/ec2-user/apis/autodep/depl
 
 
 echo 'running server as  a background job ....!!' >> /home/ec2-user/apis/autodep/deploy.log
-nohup node  dist/src/index.js & >> /home/ec2-user/apis/autodep/deploy.log
+
+echo 'killing  the current running process....!!' >> /home/ec2-user/apis/autodep/deploy.log
+pkill -f fitness
+
+echo 'starting a new instance name :fitness....!!' >> /home/ec2-user/apis/autodep/deploy.log
+sudo nohup bash -c 'exec -a fitness node dist/src/index.js&' 
+
+
+
+
+
+
