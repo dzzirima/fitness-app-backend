@@ -15,14 +15,12 @@ pkill -f fitness
 echo 'starting a new instance name :fitness....!!' >> /home/ec2-user/apis/autodep/deploy.log
 
 
-cd /home/ec2-user/apis/autodep
 
-nohup bash -c "exec -a fitness node dist/src/index.js&" >> /home/ec2-user/apis/autodep/deploy.log
+cd /home/ec2-user/apis/autodep/scripts
 
+bash ./deploy.sh
 
-
-
-
+exit 0
 
 
 
