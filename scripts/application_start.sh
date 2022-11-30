@@ -19,6 +19,8 @@ cd /home/ec2-user/apis/autodep/scripts
 
 bash ./deploy.sh
 
+exit 0
+
 
 
 
