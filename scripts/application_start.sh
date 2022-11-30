@@ -13,7 +13,7 @@ echo 'killing  the current running process....!!' >> /home/ec2-user/apis/autodep
 pkill -f fitness
 
 echo 'starting a new instance name :fitness....!!' >> /home/ec2-user/apis/autodep/deploy.log
-nohup bash -c 'exec -a fitness node dist/src/index.js&' 
+nohup bash -c 'exec -a fitness node dist/src/index.js&' >> /home/ec2-user/apis/autodep/deploy.log
 
 
 
