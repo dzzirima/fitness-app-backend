@@ -22,7 +22,7 @@ router.use("/workout", index_2.default);
  */
 router.get("/", (req, res) => {
     return res.json({
-        message: "fitness-backend app is up and running ....auto deployed",
+        message: "fitness-backend app is up and running ....auto deployed !",
     });
 });
 exports.default = router;
